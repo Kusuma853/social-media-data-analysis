@@ -16,18 +16,38 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
-footer,
-[data-testid="stFooter"],
-[data-testid="stAppDeployButton"],
-[data-testid="stStatusWidget"],
-[data-testid="stToolbar"],
-[data-testid="stDecoration"] {
+/* Hide Streamlit Cloud branding */
+footer {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+div[class*="viewerBadge"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+div[class*="viewerBadge_container"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+div[class*="viewerBadge_link"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+[data-testid="stAppDeployButton"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+[data-testid="stToolbar"] {
     display: none !important;
     visibility: hidden !important;
 }
 </style>
 """, unsafe_allow_html=True)
-
 # =========================================================
 # CUSTOM CSS
 # =========================================================
