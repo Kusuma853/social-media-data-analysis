@@ -16,13 +16,14 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
-footer {
-    visibility: hidden;
-    display: none;
-}
-
-.stAppDeployButton {
-    display: none;
+footer,
+[data-testid="stFooter"],
+[data-testid="stAppDeployButton"],
+[data-testid="stStatusWidget"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"] {
+    display: none !important;
+    visibility: hidden !important;
 }
 </style>
 """, unsafe_allow_html=True)
