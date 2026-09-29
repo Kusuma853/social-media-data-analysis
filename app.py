@@ -1,16 +1,4 @@
 import streamlit as st
-st.markdown("""
-<style>
-footer {
-    visibility: hidden;
-    display: none;
-}
-
-.stAppDeployButton {
-    display: none;
-}
-</style>
-""", unsafe_allow_html=True)
 import pandas as pd
 import matplotlib.pyplot as plt
 from collections import Counter
@@ -26,7 +14,18 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+st.markdown("""
+<style>
+footer {
+    visibility: hidden;
+    display: none;
+}
 
+.stAppDeployButton {
+    display: none;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # =========================================================
 # CUSTOM CSS
